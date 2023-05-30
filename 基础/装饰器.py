@@ -30,4 +30,44 @@
 #
 # funC('无敌小手')
 
+# 接受参数的装饰器
 # 装饰函数
+
+# def funA(flag):
+#     def funB(fun):
+#         def funC(*args, **kwargs):
+#             if flag == True:
+#                 print("名字是正确的")
+#             elif flag == False:
+#                 print("名字是错误的")
+#
+#         return funC
+#
+#     return funB
+#
+#
+# @funA(True)
+# def funD(name):
+#     print('hello', name)
+#
+#
+# funD()
+
+
+# 基于类 实现
+
+class Test(object):
+    def __init__(self, func):
+        print('函数名是 %s ' % func.__name__)
+        self.__func = func
+
+    def __call__(self, *args, **kwargs):
+        self.__func()
+
+
+@Test
+def hello():
+    print('Hello ...')
+
+
+hello()
