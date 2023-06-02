@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-            
+# @Author : Chen_jia_wei
+# @Time : 2023/6/2 14:51
+# class leiA():
+#     var1 = 100
+#     var2 = 200
+#
+#     def funB(self):
+#         print("不使用类属性")
+#
+#     @classmethod
+#     def hanshu1(cls):
+#         print(cls.var1, cls.__name__)
+#         print(cls.var2)
+#
+# leiA.hanshu1()
+""""
+# 使用外部参数
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(type(a))
+class math1():
+    def fun1(a):
+         for i in a:
+             print(i)
+
+math1.fun1(a)
+
+"""
+"""
+# 使用内部参数
+class math1():
+    a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    @classmethod
+    def fun1(cls):
+         for i in cls.a:
+             print(i)
+
+math1.fun1()
+
+"""
+
+# # 使用内部参数
+# class math1():
+#     a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     @classmethod
+#     def fun1(cls):
+#          for i in cls.a:
+#              print(i)
+#
+# math1.fun1()
+
+# 同时使用内部和外部参数
+#
+# class math1():
+#     dasa = ['a','sada', '安抚', '是梵蒂冈']
+#     print(type(dasa))
+#     @classmethod
+#     def fun1(cls,n):
+#         print("给a的参数$s: " %n)
+#         for i in cls.dasa:
+#             print(i)
+#
+#
+# math1.fun1('n')
+
+
+"""
+如果我们建一dog，那我们建的这个dog 不是特指哪一只，而是所有的dog，
+dog 会跑会跳，大多数dog 都会，那我们dog 类要包含他们
+
+"""
+
+
+class dog():
+
+    def __init__(self, name, age):
+        """
+        :param name: __init__
+                     self
+        :param age: __init__():这是一个特殊方法，每次dog类创建新实例时，会自动运行他
+                                为什么init旁边加__ init __ 这是一种约定，这是为了避免默认方法与普通方法名称发生冲突
+                     self:    self是指形参，为什么要有这个self呢，是为了python 调用这个方法来创建dog类，将自动传入实参self
+                            每个与实例相关联的方法调用都将传递实参self，他是一个指向实例本身的引用，让实例能够访问类中的属性和方法
+        """
+        self.name = name
+        self.age = age
+        """
+        :param name: self.name = name 前缀为什么要加self？
+        :param age: 定义变量都有前缀slef，已self为前缀可供类中的【所有方法】使用，可以通过类的任何实例来访问
+                    self.name = name 获取与形参 name 相关联的值，并将其赋给变量 name，
+                     然后该变量被关联到当前创建的实例。self.age = age 的作用与此类似。像这样可通过实例访问的变量称为属性。
+        """
