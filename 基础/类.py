@@ -90,3 +90,18 @@ class dog():
                     self.name = name 获取与形参 name 相关联的值，并将其赋给变量 name，
                      然后该变量被关联到当前创建的实例。self.age = age 的作用与此类似。像这样可通过实例访问的变量称为属性。
         """
+
+    def sit(self):
+        print(f"{self.name} is now sitting")
+
+    def roll_over(self):
+        print(f"{self.name} rolled over")
+
+
+my_dog = dog('black',110)
+print(f"我的狗的name {my_dog.name}")
+print(f"我的狗的age {my_dog.age}")
+my_dog.sit()
+my_dog.roll_over()
+
+
