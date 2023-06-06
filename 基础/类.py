@@ -105,26 +105,51 @@ dog 会跑会跳，大多数dog 都会，那我们dog 类要包含他们
 # my_dog.sit()
 # my_dog.roll_over()
 
-class Restaurant():
+# class Restaurant():
+#
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#
+#     def describe_restaurant(self):
+#         '''描述餐馆'''
+#         print("This restaurant's type is " + self.cuisine_type + " . ")
+#         print("This restaurant's name is " + self.restaurant_name.title() + ".")
+#
+#     def open_restautant(self):
+#         '''餐馆营业提醒'''
+#         print("Welcom our" + self.cuisine_type + " " + self.restaurant_name + " restaurant !")
+#
+#
+# restaurant_1 = Restaurant("radasf","asdaf")
+# # restaurant_2 = Restaurant("dsadfasdasd","asfdfsaf")
+# # restaurant_3 = Restaurant("22222222","111111111")
+# restaurant_1.describe_restaurant()
+# # restaurant_2.describe_restaurant()
+# # restaurant_3.describe_restaurant()
+# # restaurant_1.open_restautant()
 
-    def __init__(self, restaurant_name, cuisine_type):
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
 
-    def describe_restaurant(self):
-        '''描述餐馆'''
-        print("This restaurant's type is " + self.cuisine_type + " . ")
-        print("This restaurant's name is " + self.restaurant_name.title() + ".")
+class User():
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
-    def open_restautant(self):
-        '''餐馆营业提醒'''
-        print("Welcom our" + self.cuisine_type + " " + self.restaurant_name + " restaurant !")
+    a = ["asd", "aaa"]
+
+    def describe_user(self):
+        print("用户姓名:" + self.first_name + self.last_name)
+    @classmethod
+    def sad(cls):
+        print(cls.a,cls.__name__)
 
 
-restaurant_1 = Restaurant("radasf","asdaf")
-restaurant_2 = Restaurant("dsadfasdasd","asfdfsaf")
-restaurant_3 = Restaurant("22222222","111111111")
-restaurant_1.describe_restaurant()
-restaurant_2.describe_restaurant()
-restaurant_3.describe_restaurant()
-restaurant_1.open_restautant()
+    def greet_user(self):
+        print("你好")
+
+
+user1 = User("阿萨德", "阿萨德")
+
+user1.describe_user()
+user1.greet_user()
+user1.sad()
