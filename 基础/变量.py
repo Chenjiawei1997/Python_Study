@@ -7,3 +7,8 @@ def fun1(name, age):
 
 
 fun1("cjw", "25")
+
+a = [1,2,3]
+a = 'robot'
+
+print(a)

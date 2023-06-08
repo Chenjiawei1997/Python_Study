@@ -129,27 +129,40 @@ dog 会跑会跳，大多数dog 都会，那我们dog 类要包含他们
 # # restaurant_3.describe_restaurant()
 # # restaurant_1.open_restautant()
 
+#
+# class User():
+#     def __init__(self, first_name, last_name):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#
+#     a = ["asd", "aaa"]
+#
+#     def describe_user(self):
+#         print("用户姓名:" + self.first_name + self.last_name)
+#     @classmethod
+#     def sad(cls):
+#         print(cls.a,cls.__name__)
+#
+#
+#     def greet_user(self):
+#         print("你好")
+#
+#
+# user1 = User("阿萨德", "阿萨德")
+#
+# user1.describe_user()
+# user1.greet_user()
+# user1.sad()
 
-class User():
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
-
-    a = ["asd", "aaa"]
-
-    def describe_user(self):
-        print("用户姓名:" + self.first_name + self.last_name)
-    @classmethod
-    def sad(cls):
-        print(cls.a,cls.__name__)
 
 
-    def greet_user(self):
-        print("你好")
 
 
-user1 = User("阿萨德", "阿萨德")
 
-user1.describe_user()
-user1.greet_user()
-user1.sad()
+
+
+
+
+
+
+
