@@ -119,3 +119,28 @@ print(2 in tuple_name)
 # print(f"原元组{tupe}")
 # tupe = tupe[3:]  # 重新赋值
 # print(f"切片后{tupe}")
+# # # 类型转换
+# tupe = (1, 2, 3, "无敌小手")
+# print(type(tupe))
+# print(tupe)
+# tupe = set(tupe)
+# print(type(tupe))
+# print(tupe)
+# tupe = list(tupe)  # 转列表
+# print(type(tupe))
+# print(tupe)
+
+
+# 内置函数
+# tupe = (1, 2, 2,2,3, 4, 5, 6)
+# print(tupe.count(2))
+
+#
+# tupe = (1, 2,2,2, 3, 4, 5, 6)
+# print(len(tupe))
+
+"""
+列表
+"""
+
+# 什么是列表
