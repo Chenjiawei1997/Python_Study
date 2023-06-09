@@ -68,16 +68,54 @@ print(2 in tuple_name)
 # del l[1]
 # print(l)
 
-#元组的增删改查
+# 元组的增删改查
 
-#元组拼接
-tuple_name = (1,"aS","陈家伟")
+# 元组拼接
+# tuple_name1 = (1, "aS", "无敌")
+# tuple_name2 = (2, "sad", "小手")
+# print(tuple_name2 *2)
 # # 元组不变性
 # tuple_name = (1, 2, 3, 4, 5,6)
 # tuple_name[0] = 99
 # print(tuple_name)
 # # 代码报错：TypeError: 'tuple' object does not support item assignment
-# # 类型转换
+
+# tup = (1,2,3)
+# print(id(tup))
+# tup = (4,5,6)
+# print(id(tup))
+
 
 # tuple_name = (1, 2, 3, 4, 5,6)
 # print(2 in tuple_name)
+#
+# tupe = (1,)
+# tupe.__add__((2,3))
+
+# # 元组 添加元素
+# a = (1,2,3)
+# a = list(a)
+# print(type(a))
+# a.append(8)
+# a = tuple(a)
+# print(a)
+# print(type(a))
+
+
+# 元组删除元素
+# tupe = (1, 2, 3,3, 4,4, 5, 6)
+# print(f"原元组{tupe}")
+# print(type(tupe))
+# tupe = list(tupe)   # 转换列表
+# print(type(tupe))
+# print(f"转换为列表{tupe}")
+# tupe
+# print(f"切片列表{tupe}")
+# # # 类型转换
+
+
+# 元组切片
+# tupe = (1, 2, 3, 4, 5, 6)
+# print(f"原元组{tupe}")
+# tupe = tupe[3:]  # 重新赋值
+# print(f"切片后{tupe}")
