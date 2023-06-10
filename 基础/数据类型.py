@@ -144,3 +144,64 @@ print(2 in tuple_name)
 """
 
 # 什么是列表
+# list1 = [1, "dsf", 2, 3, "水电费"]
+# print(f"使用索引来获取的值:  {list1[4]}")
+
+"""
+函数名
+
+
+
+"""
+"""
+1/我们使用了append函数方法，无返回值，所有返回None
+2/使用print不能直接打印结果
+"""
+# # 1/
+# list_None = [1, "dsf", 2, 3, "水电费"]
+# print(list_None.append("无敌小手"))
+# # 2/
+# list1 = [1, "dsf", 2, 3, "水电费"]
+# list1.append("无敌小手")
+# print(list1)
+#
+# list1 = [1, "dsf", 2, 3, "水电费"]
+# list1.insert(1,"sad")
+# print(list1)
+
+# list1 = [1,1, "dsf", 2, 3, "水电费"]
+# list1.remove(1)
+# # remove(x) 不能指定删除某个位置的value，不需要知道哪个位置，没有元素的话，会报错
+# print(list1)
+
+
+# del 删列表
+# list1 = [1,1, "dsf", 2, 3, "水电费"]
+# del list1
+# print(list1)
+
+# pop（）
+# list1 = [1,1, "dsf", 2, 3, "水电费"]
+# list1.pop()
+# # 默认删除最后一个
+# print(list1)
+
+# list1 = [1,1, "dsf", 2, 3, "水电费"]
+# list1[0] = 2
+# print(list1)
+
+
+list1 = [1,1, "dsf", 2, 3, "水电费"]
+for i in list1:
+    print(i)
+
+"""
+copy()
+extend()
+reverse()
+sort()
+"""
+
+dir(list)
+
+# print(list1)
