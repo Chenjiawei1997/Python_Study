@@ -190,18 +190,24 @@ print(2 in tuple_name)
 # list1[0] = 2
 # print(list1)
 
-
-list1 = [1,1, "dsf", 2, 3, "水电费"]
-for i in list1:
-    print(i)
-
-"""
-copy()
-extend()
-reverse()
-sort()
-"""
-
-dir(list)
+#
+# list1 = [1,1, "dsf", 2, 3, "水电费"]
+# # for i in list1:
+# #     print(i)
+#
+# """
+# copy()
+# extend()
+# reverse()
+# sort()
+# """
+#
+# dir(list)
 
 # print(list1)
+
+
+a = (1, 2, 3, 4, 5, "da", ["2","23",333])
+
+print(a)
+print(a.index("da"))
