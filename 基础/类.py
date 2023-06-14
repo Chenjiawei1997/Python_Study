@@ -70,7 +70,6 @@ dog 会跑会跳，大多数dog 都会，那我们dog 类要包含他们
 
 """
 
-
 #
 # class dog():
 #
@@ -155,14 +154,33 @@ dog 会跑会跳，大多数dog 都会，那我们dog 类要包含他们
 # user1.sad()
 
 
+"""
+实例方法、类方法、静态方法、抽象方法
+"""
 
+b = 100
 
+print(id(b))  # 标识
+print(id(100))
+print(type(b))  # 类型
+print(b)  # 值
 
-
-
-
-
-
-
-
-
+#
+# class A:
+#     p = "test"
+#     def __init__(self, a):
+#         self.a = a   # a 是实例的属性
+#     @classmethod   # 类方法
+#     def printa(cls):
+#         print(cls.p)    # 可以调用类方法属性
+#
+#
+#     @classmethod  # 类方法
+#     def printa(cls):
+#         print(cls.p)  # 可以调用类方法属性
+#
+#
+# b = A(100)
+#
+# b.printa()
+# # A.printa(b)
