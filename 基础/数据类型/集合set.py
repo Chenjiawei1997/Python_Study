@@ -27,13 +27,13 @@
 # 增加元素
 # 删除元素
 
-# s = {1, 2, "3"}
-# s.add("4")  # 添加集合
-# print(s)
-# s.remove("3")  # 移除集合成员
-# print(s)
-# s.clear()  # 清楚集合
-# print(s)
+s = {1, 2, "3"}
+s.add("4")  # 添加集合
+print(s)
+s.remove("3")  # 移除集合成员
+print(s)
+s.clear()  # 清楚集合
+print(s)
 
 #  *** 关于可哈希
 """
