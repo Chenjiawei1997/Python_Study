@@ -17,11 +17,11 @@
 a = {"a":1,"b":2,"c":3}
 内置函数dict,使用内置函数可以不写等于
 """
-# a = {"a":1,"b":2,"c":3}
-# print(a)
-#
-# a = dict(a=1, b=2, c=3)
-# print(a)
+a = {"a":1,"b":2,"c":3}
+print(a)
+
+a = dict(a=1, b=2, c=3)
+print(a)
 
 
 # 修改
@@ -52,21 +52,21 @@ print(d)  # 读取成员，key不在，抛异常
 
 """
 # 使用
-# a = {"b":2,"c":3}
-# print(a)
-# a.update(a = "cjw")
-# a.setdefault("d","safsad")  # a 存在不生效  setdefault 如果key不在，创建有默认值的key
-# print(a)
+a = {"b":2,"c":3}
+print(a)
+a.update(a = "cjw")
+a.setdefault("d","safsad")  # a 存在不生效  setdefault 如果key不在，创建有默认值的key
+print(a)
 
 # 使用pop
-# d = {"b":2,"c":3}
-# d.pop("b")
-# print(d)
+d = {"b":2,"c":3}
+d.pop("b")
+print(d)
 
-# d = {"b":2,"c":3}
-# print("移除了数据：", d.pop("b"))
-# print("移除了键值对：", d.popitem())
-# print(d)
+d = {"b":2,"c":3}
+print("移除了数据：", d.pop("b"))
+print("移除了键值对：", d.popitem())
+print(d)
 
 
 # 使用
