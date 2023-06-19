@@ -44,23 +44,42 @@
 # print(res)
 
 # 默认参数
-def add(f: str, a: int, b: int = 0) -> int:
+# def add(f: str, a: int, b: int = 0) -> int:
+#     if f == "+":
+#         c = a + b
+#     else:
+#         c = a - b
+#     return c
+#
+#
+# res = add("+", 2, 9)  # 对函数的调用(call),使用函数
+# print(res)
+
+
+# 不定长参数
+
+# def add(f: str, a: int, b: int = 0, *args, **kwargs) -> int:
+#     print(args)
+#     print(kwargs)
+#     if f == "+":
+#         c = a + b
+#     else:
+#         c = a - b
+#     return c
+#
+#
+# res = add("+", 2, 5, 15)  # 对函数的调用(call),使用函数
+# print(res)
+
+
+def add(f, a, b, *args, **kwargs):
+    print(args)
+    print(kwargs)
     if f == "+":
         c = a + b
     else:
         c = a - b
     return c
-
-
-res = add("+", 2, 9)  # 对函数的调用(call),使用函数
-print(res)
-
-
-# 不定长参数
-
-
-
-
 
 
 # 函数的参数
@@ -77,5 +96,8 @@ res = add(b=5,a=1)
 
 不定长参数:  
 
+**kwargs 让函数接收任意数量的关键字参数，存储成字典
+
+*args 让函数接受任意数量的位置参数，存储成元组
 
 """

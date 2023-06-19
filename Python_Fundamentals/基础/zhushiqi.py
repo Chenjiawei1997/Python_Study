@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-            
 # @Author : Chen_jia_wei
 # @Time : 2023/6/1 20:05
-
-from 装饰器 import timer
 import time
+from 装饰器 import timer
+
 
 
 @timer
